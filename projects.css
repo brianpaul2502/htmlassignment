@@ -1,0 +1,141 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply Montserrat font and general styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ec0000;
+    color: #ffffff;
+    padding-top: 60px; /* Add padding to avoid content being hidden behind fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #0a0a0a;
+    padding: 10px 20px;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Ensure it spans the full width of the page */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffed84;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content */
+    padding: 50px 100px;
+    width: 100%; /* Ensure the section takes the full width */
+    max-width: 1000px; /* Optional: Limit the maximum width */
+    flex-direction: column; /* Stack projects vertically */
+}
+
+.content {
+    max-width: 800px;
+    text-align: left; /* Left-align text within the content */
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* Space between projects */
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.project-img {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 20px; /* Add margin on the right side */
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-info {
+    flex: 2;
+}
+
+.project-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    margin-top: 20px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-info a {
+    color: #ffed84;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #ffed84;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-info a:hover {
+    background-color: #ffed84;
+    color: #1a1a1a;
+}
+
+footer {
+    background-color: #0a0a0a;
+    color: #ffed84;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; /* Ensure it spans the full width of the page */
+    position: fixed; /* Make the footer fixed */
+    bottom: 0; /* Position it at the bottom */
+}
+
+.footer-content {
+    max-width: 1000px; /* Optional: Limit the maximum width */
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #ffed84;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
